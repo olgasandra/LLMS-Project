@@ -4,6 +4,8 @@
     - Under development / Experimental
     - Depends on external API's
 
+## Prerequisites
+
 ## 1) Introduction
 
 ## 2) Installation
