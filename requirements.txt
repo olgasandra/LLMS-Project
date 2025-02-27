@@ -1,0 +1,6 @@
+# packages required here
+
+pip install dotenv
+pip install pandas
+pip install numpy
+pip install openai

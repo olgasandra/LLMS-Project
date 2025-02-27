@@ -11,7 +11,6 @@ __pycache__/
 # Data
 *.db
 *.csv
-*.txt
 *.json
 *.pkl
 *.parquet
@@ -138,6 +137,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
+NISR_LLM
 .env
 .venv
 env/
