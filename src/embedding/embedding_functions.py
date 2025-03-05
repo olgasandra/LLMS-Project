@@ -14,7 +14,7 @@ import numpy as np
 client = openai
 
 # Function to generate embeddings
-def get_embedding(text, model):
+def get_embedding(text, model="text-embedding-ada-002"):
     """_summary_
 
     Args:
