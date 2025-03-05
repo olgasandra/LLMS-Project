@@ -21,7 +21,7 @@ client = openai
 load_dotenv()
 
 # Access environment variables as if they came from the actual environment
-client.api_key = os.getenv("API_KEY")
+client.api_key = os.getenv("OPENAI_API_KEY")
 
 # %%
 # Accessing the openai api_key

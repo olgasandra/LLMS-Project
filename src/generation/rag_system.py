@@ -23,7 +23,7 @@ client = openai
 load_dotenv()
 
 # Access environment variables as if they came from the actual environment
-api_key = os.getenv("API_KEY")
+api_key = os.getenv("OPENAI_API_KEY")
 
 # %% [markdown]
 # ### Testing the RAG System
