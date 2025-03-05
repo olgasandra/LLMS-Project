@@ -13,7 +13,7 @@ from src.generation.generation_functions import query_system, generate_response
 
 # %%
 # Set up directories
-EMBEDDINGS_DIR = Path.cwd().parent.parent.joinpath("data/embeddings")
+EMBEDDINGS_DIR = Path.cwd().joinpath("data/embeddings")
 
 # %%
 client = openai

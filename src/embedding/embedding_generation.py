@@ -10,10 +10,8 @@ from embedding_functions import get_embedding
 
 # %%
 # Set up directories
-EMBEDDINGS_DIR = Path.cwd().parent.parent.joinpath("data/embeddings")
-OUTPUTS_DIR = Path.cwd().parent.parent.joinpath("data/outputs")
-PROCESSED_DIR = Path.cwd().parent.parent.joinpath("data/processed")
-TEST_DIR = Path.cwd().parent.parent.joinpath("data/test_data")
+EMBEDDINGS_DIR = Path.cwd().joinpath("data/embeddings")
+PROCESSED_DIR = Path.cwd().joinpath("data/processed")
 
 # %%
 client = openai
