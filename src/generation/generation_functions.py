@@ -3,21 +3,6 @@ import openai
 
 # script with functions for generative
 
-# Function to calculate similarity (dot product)
-def calculate_similarity(query_embedding, db_embeddings):
-    """_summary_
-
-    Args:
-        query_embedding (_type_): _description_
-        db_embeddings (_type_): _description_
-
-    Returns:
-        _type_: _description_
-    """    
-    similarities = np.dot(db_embeddings, query_embedding)
-    return similarities
-
-
 # Retrieving system function to find and retrieve the top 4 results
 def query_system(question, df, model="text-embedding-ada-002"):
     """_summary_
