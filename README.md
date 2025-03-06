@@ -36,6 +36,16 @@
       ipython kernel install --name "NISR_LLM" --user
       ...
 
+      ### Installing occ_coder
+
+      The codebase is meant to also run as a python library, in order to install this
+      you will then need to run:
+
+      ```bash
+      pip install --upgrade pip
+      pip install .
+      ```
+
 ## 3) Usage
 
 # License

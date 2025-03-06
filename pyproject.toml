@@ -21,3 +21,7 @@ homepage = "need to change"
 
 [tool.setuptools.dynamic]
 version = {attr = "occ_coder.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["occ_coder"]
+namespaces = false
