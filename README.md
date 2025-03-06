@@ -20,21 +20,21 @@
       
       You may want to use a virtual environment.
       Use your terminal for this
-      ...
+      ```bash
       python -m venv NISR_LLM
       python3.11 -m venv NISR_LLM (if wanting specific python version)
       NISR_LLM\Scripts\activate
-      ...
+      ```
 
-      ...
+      ```bash
       python -m pip install --upgrade pip
       pip install -r requirements.txt
-      ...
+      ```
 
       Set-up custom kernel from your virtual environment (jupyter notebook)
-      ...
+      ```bash
       ipython kernel install --name "NISR_LLM" --user
-      ...
+      ```
 
       ### Installing occ_coder
 
