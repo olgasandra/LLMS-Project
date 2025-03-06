@@ -17,41 +17,38 @@
 
 ## 2) Installation
       
-      
-      You may want to use a virtual environment.
-      Use terminal for this
-      ```
-      python -m venv NISR_LLM
+### Virtual environment
 
-      or 
+**Once in the project space (i.e. the base repository level) it is recommended you set-up a virtual environment. In the terminal run:**
+```
+python -m venv NISR_LLM
+```
+**or** 
+```
+python3.11 -m venv NISR_LLM (if wanting specific python version)
+```
+**Activate your virtual environment**
+```
+NISR_LLM\Scripts\activate
+```
+**Upgrade pip**
+```
+python -m pip install --upgrade pip
+```
 
-      python3.11 -m venv NISR_LLM (if wanting specific python version)
+**The codebase is meant to also run as a python library so the occ_coder package needs installing. Run:**
 
-      NISR_LLM\Scripts\activate
-      ```
+```     
+pip install .
+```
+**Use `pip list` to make sure you can see `occ_coder = 0.0.1`**
 
-      ```
-      python -m pip install --upgrade pip
-      pip install -r requirements.txt
-      ```
+![image](https://github.com/user-attachments/assets/b7539bf2-9f69-49f5-ac69-885b8bd505e6)
 
-      Set-up custom kernel from your virtual environment (jupyter notebook)
-      ```
-      ipython kernel install --name "NISR_LLM" --user
-      ```
-
-      ### Installing occ_coder
-      Navigate to `occ_coder` folder in your command line interface(CLI)
-
-      The codebase is meant to also run as a python library, in order to install this
-      you will then need to run:
-
-      ```
-      pip install --upgrade pip
-      pip install .
-      ```
-
-      Use `pip list` to make sure you can see the `occ_coder = 0.0.1`
+**You may need to set-up a custom kernel from your virtual environment (if using jupyter notebook)**
+```
+ipython kernel install --name "NISR_LLM" --user
+```
 
 ## 3) Usage
 
