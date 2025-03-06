@@ -1,9 +1,16 @@
 # `LLMS-Project`
 
 ## Code state
-    - Under development / Experimental
-    - Depends on external API's
 
+> [!WARNING]
+> Please be aware that for development purposes, these experiments use
+> experimental Large Language Models (LLM's) not intended for production. They
+> can present inaccurate information, hallucinated statements and offensive
+> text by random chance or through malevolent prompts.
+
+- **Under development** / **Experimental**
+- **Depends on external API's**
+   
 ## Prerequisites
 
 ## 1) Introduction
