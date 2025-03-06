@@ -17,8 +17,7 @@ dependencies = [
 ]
 
 [project.urls]
-homepage = "https://github.com/olgasandra/LLMS-Project"
-
+homepage = "need to change"
 
 [tool.setuptools.dynamic]
 version = {attr = "occ_coder.__version__"}
