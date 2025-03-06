@@ -10,11 +10,9 @@ dependencies = [
     "dotenv",
     "pandas",
     "numpy",
-    "openai==0.28",
+    "openai==1.58.1",
     "Path",
-    "re",
     "dash",
-    "ast"
     "ragas",
 ]
 
