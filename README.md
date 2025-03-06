@@ -20,13 +20,13 @@
       
       You may want to use a virtual environment.
       Use your terminal for this
-      ```bash
+      ```
       python -m venv NISR_LLM
       python3.11 -m venv NISR_LLM (if wanting specific python version)
       NISR_LLM\Scripts\activate
       ```
 
-      ```bash
+      ```
       python -m pip install --upgrade pip
       pip install -r requirements.txt
       ```
@@ -37,11 +37,12 @@
       ```
 
       ### Installing occ_coder
+      Navigate to `occ_coder` folder in your command line interface(CLI)
 
       The codebase is meant to also run as a python library, in order to install this
       you will then need to run:
 
-      ```bash
+      ```
       pip install --upgrade pip
       pip install .
       ```
