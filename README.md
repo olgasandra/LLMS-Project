@@ -19,10 +19,14 @@
       
       
       You may want to use a virtual environment.
-      Use your terminal for this
+      Use terminal for this
       ```
       python -m venv NISR_LLM
+
+      or 
+
       python3.11 -m venv NISR_LLM (if wanting specific python version)
+
       NISR_LLM\Scripts\activate
       ```
 
@@ -32,7 +36,7 @@
       ```
 
       Set-up custom kernel from your virtual environment (jupyter notebook)
-      ```bash
+      ```
       ipython kernel install --name "NISR_LLM" --user
       ```
 
@@ -46,6 +50,8 @@
       pip install --upgrade pip
       pip install .
       ```
+
+      Use `pip list` to make sure you can see the `occ_coder = 0.0.1`
 
 ## 3) Usage
 
