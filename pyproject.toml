@@ -3,6 +3,8 @@ name = "occ_coder"
 description = "An app used for occupation coding"
 authors = [{name = "National Institute of Statistics of Rwanda", email = "info@statistics.gov.rw"}]
 readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.00"
 dynamic = ["version"]
 dependencies = [
     "dotenv",
