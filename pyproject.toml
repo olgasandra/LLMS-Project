@@ -1,0 +1,24 @@
+[project]
+name = "occ_coder"
+description = "An app used for occupation coding"
+authors = [{name = "National Institute of Statistics of Rwanda", email = "info@statistics.gov.rw"}]
+readme = "README.md"
+dynamic = ["version"]
+dependencies = [
+    "dotenv",
+    "pandas",
+    "numpy",
+    "openai==0.28",
+    "Path",
+    "re",
+    "dash",
+    "ast"
+    "ragas",
+]
+
+[project.urls]
+homepage = "https://github.com/olgasandra/LLMS-Project"
+
+
+[tool.setuptools.dynamic]
+version = {attr = "occ_coder.__version__"}
