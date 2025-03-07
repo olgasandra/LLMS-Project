@@ -1,5 +1,8 @@
 import numpy as np
 import openai
+#import occ_coder
+#from occ_coder.embedding import embedding_functions # works
+from occ_coder.embedding.embedding_functions import get_embedding, calculate_similarity # also works
 
 # script with functions for generative
 

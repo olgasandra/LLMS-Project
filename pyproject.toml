@@ -1,11 +1,10 @@
+[build-system]
+requires = ["setuptools>=62"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "occ_coder"
-description = "An app used for occupation coding"
-authors = [{name = "National Institute of Statistics of Rwanda", email = "info@statistics.gov.rw"}]
-readme = "README.md"
-license = {file = "LICENSE"}
-requires-python = ">=3.00"
-dynamic = ["version"]
+version = "1.0.0"
 dependencies = [
     "dotenv",
     "pandas",
@@ -15,13 +14,3 @@ dependencies = [
     "dash",
     "ragas",
 ]
-
-[project.urls]
-homepage = "need to change"
-
-[tool.setuptools.dynamic]
-version = {attr = "occ_coder.__version__"}
-
-[tool.setuptools.packages.find]
-include = ["occ_coder"]
-namespaces = false
