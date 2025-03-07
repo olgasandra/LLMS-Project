@@ -9,7 +9,7 @@ import numpy as np
 from pathlib import Path
 from dotenv import load_dotenv
 import os
-from src.generation.generation_functions import query_system, generate_response
+from generation_functions import query_system, generate_response
 
 # %%
 # Set up directories

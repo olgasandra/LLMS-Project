@@ -1,13 +1,6 @@
 import numpy as np
 import openai
-import sys
-
-sys.path.append(r"C:\Users\onalaj\New Documents\LLMS-Project\occ_coder")
-
-from occ_coder.embedding.embedding_functions import get_embedding, calculate_similarity
-#from ..embedding.embedding_functions import get_embedding, calculate_similarity
-#from ...occ_coder.embedding.embedding_functions import get_embedding, calculate_similarity
-
+from embedding_functions import get_embedding, calculate_similarity
 
 # script with functions for generative
 
