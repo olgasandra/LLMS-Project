@@ -3,9 +3,7 @@
 dotenv
 pandas
 numpy 
-openai==0.28
+openai==2.00
 Path
-re
 dash
-ast
 ragas
