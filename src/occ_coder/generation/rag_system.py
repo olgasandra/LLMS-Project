@@ -5,7 +5,6 @@
 # Importing the necessary libraries
 import openai
 import pandas as pd
-import numpy as np
 from pathlib import Path
 from dotenv import load_dotenv
 import os
