@@ -5,11 +5,10 @@
 # Importing the necessary libraries
 import openai
 import pandas as pd
-import numpy as np
 from pathlib import Path
 from dotenv import load_dotenv
 import os
-from src.generation.generation_functions import query_system, generate_response
+from occ_coder.generation.generation_functions import generate_response, query_system
 
 # %%
 # Set up directories
@@ -23,7 +22,7 @@ client = openai
 load_dotenv()
 
 # Access environment variables as if they came from the actual environment
-api_key = os.getenv("API_KEY")
+api_key = os.getenv("OPENAI_API_KEY")
 
 # %% [markdown]
 # ### Testing the RAG System
@@ -41,5 +40,3 @@ retrieved_row = query_system(query, embeddings_data)
 # Generate the response
 response = generate_response(query, retrieved_row)
 print(response)
-
-
