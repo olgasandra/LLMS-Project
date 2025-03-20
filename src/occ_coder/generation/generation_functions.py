@@ -1,8 +1,55 @@
+# script with functions for generative
+
+# import packages
 import numpy as np
 import openai
-from occ_coder.embedding.embedding_functions import get_embedding, calculate_similarity # also works
+from langdetect import detect
+from occ_coder.embedding.embedding_functions import get_embedding, calculate_similarity 
 
-# script with functions for generative
+# Function to translate text to English
+def gpt_translate_to_english(text, source_lang="auto"):
+    """Translate text to English using GPT."""
+    if source_lang == "auto":
+        try:
+            source_lang = detect(text)
+        except:
+            source_lang = "Unknown"
+    
+    system_prompt = f"You are a professional translator. Translate the following {source_lang} text to English accurately."
+    try:
+        response = openai.ChatCompletion.create(
+            model="gpt-4o-mini",
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": text}
+            ],
+            temperature=0.2
+        )
+        return response['choices'][0]['message']['content'].strip()
+    except Exception as e:
+        return f"Translation failed: {e}"
+
+# Function to summarize text
+def gpt_summarize_text(text, language="English"):
+    """Summarize text using GPT."""
+    try:
+        system_prompt = f"You are an expert summarizer. Summarize the following text in clear and concise {language}."
+        
+        response = openai.ChatCompletion.create(
+            model="gpt-4o-mini",
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": text}
+            ],
+            temperature=0.5,
+            max_tokens=30
+        )
+        
+        summary = response['choices'][0]['message']['content'].strip()
+        return summary
+    
+    except Exception as e:
+        return f"Summarization failed: {e}"
 
 # Retrieving system function to find and retrieve the top 4 results
 def query_system(question, df, model="text-embedding-ada-002"):

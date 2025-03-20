@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "occ_coder"
-version = "1.0.0"
+version = "1.0.1"
 dependencies = [
     "dotenv",
     "pandas",
@@ -13,4 +13,5 @@ dependencies = [
     "Path",
     "dash",
     "ragas",
+    "langdetect",
 ]

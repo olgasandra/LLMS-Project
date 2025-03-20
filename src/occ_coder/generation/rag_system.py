@@ -29,14 +29,13 @@ api_key = os.getenv("OPENAI_API_KEY")
 
 # %%
 # Importing embeddings data
-embeddings_data = pd.read_pickle(EMBEDDINGS_DIR / "isco_08_df_with_embeddings.pkl")
+embeddings_data = pd.read_pickle(EMBEDDINGS_DIR / "isco_08_df_with_embeddings_for_translation.pkl")
 
-# %%
-query = "This person works as a waiter at restaurant?"
+
+# write a query
+description = "logging climber"
 
 # Retrieve the most relevant row
-retrieved_row = query_system(query, embeddings_data)
+response = query_system(description, isco_08_df_pkl)
 
-# Generate the response
-response = generate_response(query, retrieved_row)
 print(response)
