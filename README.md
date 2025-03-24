@@ -51,7 +51,7 @@ python -m pip install --upgrade pip
 ```     
 pip install .
 ```
-**Use `pip list` to make sure you can see `occ_coder = 1.0.0`**
+**Use `pip list` to make sure you can see `occ_coder = 1.0.1` (below is an older version)**
 
 ![image](https://github.com/user-attachments/assets/b7539bf2-9f69-49f5-ac69-885b8bd505e6)
 
