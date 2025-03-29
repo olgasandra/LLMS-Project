@@ -39,7 +39,7 @@ app.layout = html.Div([
     'fontSize': '25px'
 })
 
-# Tab content callback
+## Tab content callback
 @app.callback(
     Output('tab-content', 'children'),
     [Input('tabs', 'value')]
@@ -86,7 +86,7 @@ def render_tab_content(tab_name):
     elif tab_name == 'quality-checking':
         return html.H3("Quality Checking Tab", style={'textAlign': 'center', 'color': '#34495e'})
 
-# Callback to handle the query submission
+## Callback to handle the query submission
 @app.callback(
     [Output('classification-result', 'children'),
      Output('other-occupations', 'children')],
