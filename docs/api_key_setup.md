@@ -3,7 +3,7 @@
 Create a `.env` file in the root directory of the project and add the following variables:
 
 ```
-OPEN_API_KEY = "your_open_api_key"
+OPEN_API_KEY=your_open_face_api_key
 ```
 
 Replace `your_open_face_api_key` with your actual Hugging Face API key.
@@ -19,5 +19,5 @@ For further assistance, refer to the project's documentation or contact the main
 ...
 # Load the token
   load_dotenv()
-  sec_key = os.getenv("OPEN_API_KEY")
+  sec_key = os.getenv("TOKEN_KEY")
 ...
