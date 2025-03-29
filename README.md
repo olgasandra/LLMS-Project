@@ -18,6 +18,13 @@
 
 ## 1) Introduction
 
+Large Language Models (LLMs) have significantly advanced natural language processing, enabling automation in tasks such as occupational code classification. Traditional classification methods, including the **International Standard Classification of Occupations (ISCO)**, **International Standard Classification of Education (ISCED)**, and **International Standard Industrial Classification (ISIC)**, often rely on manual input, which can be inefficient and prone to errors.
+
+This project leverages LLMs to automatically analyze job titles, descriptions, and educational qualifications, assigning accurate occupational codes. By improving efficiency and scalability, this approach enhances labor market analysis and supports data-driven policy-making.
+
+Developed as part of NISR’s Big Data and Data Revolution department, this project contributes to innovations in data processing and classification, driving Rwanda’s labor market intelligence forward.
+
+
 ## 2) Installation
       
 ### Virtual environment
