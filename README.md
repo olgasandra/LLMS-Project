@@ -39,14 +39,17 @@ NISR_LLM\Scripts\activate
 python -m pip install --upgrade pip
 ```
 
-**The codebase is meant to also run as a python library so the occ_coder package needs installing. Run:**
+**Install need packages. Run:**
 
 ```     
-pip install .
+pip install -r requirements.txt
 ```
+<<<<<<< HEAD
 **Use `pip list` to make sure you can see `occ_coder = 1.0.0`**
 
 ![image](https://github.com/user-attachments/assets/b7539bf2-9f69-49f5-ac69-885b8bd505e6)
+=======
+>>>>>>> c7de437bb36ff44ba664f7df29ff9585167a7c1a
 
 **You may need to set-up a custom kernel from your virtual environment (if using jupyter notebook)**
 ```
