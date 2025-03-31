@@ -85,5 +85,4 @@ dependencies = [
     "Werkzeug==3.0.6",
     "yarl==1.18.3",
     "zipp==3.21.0",
-    
 ]
