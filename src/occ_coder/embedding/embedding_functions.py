@@ -1,14 +1,7 @@
 # script with functions for embedding
 
-# move the functions you have made here
-
-# you will need to make the functions global
-
-# add docstrings
-
 # import packages
 import openai
-import pandas as pd
 import numpy as np
 
 client = openai
